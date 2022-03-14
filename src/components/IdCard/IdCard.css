@@ -1,0 +1,9 @@
+.idCard {
+    border: 1px solid black;
+    height: 200px;
+    width: 600px;
+}
+
+.card_img {
+    border: 1px solid black;        
+}
