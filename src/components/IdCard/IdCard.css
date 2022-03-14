@@ -1,9 +1,25 @@
-.idCard {
-    border: 1px solid black;
-    height: 200px;
-    width: 600px;
+ul li {
+    list-style: none;
+    text-align: left;
+    margin-left: -30px;
 }
 
-.card_img {
-    border: 1px solid black;        
+img {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.idCard {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.card_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }

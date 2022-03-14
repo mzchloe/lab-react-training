@@ -6,25 +6,33 @@ export function IdCard({ img, firstName, lastName, gender, height, birth }) {
       <div className="card_img">
         <img src={img} alt={img} />
       </div>
-      <div className="card_info">
-        <ul>
-          <li>
-            <h3>First name: {firstName}</h3>
-          </li>
-          <li>
-            <h3>Last name:{lastName}</h3>
-          </li>
-          <li>
-            <h3>Gender:{gender}</h3>
-          </li>
-          <li>
-            <h3>Height:{height}</h3>
-          </li>
-          <li>
-            <h3>Birth:{birth}</h3>
-          </li>
-        </ul>
-      </div>
+      <ul>
+        <li>
+          <span>
+            <b>First name:</b> {firstName}
+          </span>
+        </li>
+        <li>
+          <span>
+            <b>Last name:</b> {lastName}
+          </span>
+        </li>
+        <li>
+          <span>
+            <b>Gender:</b> {gender}
+          </span>
+        </li>
+        <li>
+          <span>
+            <b>Height:</b> {height / 100}
+          </span>
+        </li>
+        <li>
+          <span>
+            <b>Birth:</b> {birth}
+          </span>
+        </li>
+      </ul>
     </div>
   );
 }
