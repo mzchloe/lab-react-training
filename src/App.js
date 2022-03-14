@@ -1,6 +1,7 @@
 import './App.css';
 import { IdCard } from './components/IdCard/IdCard';
 import { Greetings } from './components/Greetings/Greetings';
+import Random from './components/Random/Random';
 
 function App() {
   return (
@@ -26,6 +27,10 @@ function App() {
       <Greetings lang="de" children="Ludwig" />
       <br></br>
       <Greetings lang="fr" children="François" />
+      <h1>Random</h1>
+      <Random min={1} max={6}/>
+      <br></br>
+      <Random min={1} max={100}/>
     </div>
   );
 }
