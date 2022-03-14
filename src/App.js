@@ -1,10 +1,11 @@
 import './App.css';
-import {IdCard} from './components/IdCard/IdCard';
+import { IdCard } from './components/IdCard/IdCard';
+import { Greetings } from './components/Greetings/Greetings';
 
 function App() {
   return (
     <div className="App">
-    <h1>IdCard</h1>
+      <h1>IdCard</h1>
       <IdCard
         firstName="John"
         lastName="Doe"
@@ -13,7 +14,7 @@ function App() {
         birth={new Date('1992-07-14').toDateString()}
         img="https://randomuser.me/api/portraits/men/44.jpg"
       />
-        <IdCard
+      <IdCard
         firstName="Obrien"
         lastName="Delores"
         gender="female"
@@ -21,6 +22,10 @@ function App() {
         birth={new Date('1988-05-11').toDateString()}
         img="https://randomuser.me/api/portraits/women/44.jpg"
       />
+      <h1>Greetings</h1>
+      <Greetings lang="de" children="Ludwig" />
+      <br></br>
+      <Greetings lang="fr" children="François" />
     </div>
   );
 }
