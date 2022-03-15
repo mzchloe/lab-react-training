@@ -1,6 +1,15 @@
 
 
-export default function Rating(props){
+export default function Rating({children}){
+ 
+    let stars = []
+    for(let i = 0; i < 5; i++){
+        if (i < Math.round(children)) {
+            stars.push('★') 
+        } else {
+          stars.push('☆') 
+        }
+    }
 
     /* First attempt but not working with decimals, and conditions are missing */
 /*    const displayRatings = (numberOfStars) => {
@@ -13,9 +22,8 @@ export default function Rating(props){
     
 
     return (
-
         <div>
-         ★
+         {stars}
         </div>
     )
 }

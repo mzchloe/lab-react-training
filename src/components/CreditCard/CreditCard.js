@@ -11,7 +11,8 @@ export default function CreditCard(props) {
 
 
   return (
-      <div className="credit-card" style={divStyle}>
+      <div className="card-container" style={divStyle}>
+      <div className="credit-card">
         <div className="card-logo">
           <p className="card-type">{props.type}</p>
           <p className="card-number">
@@ -27,6 +28,7 @@ export default function CreditCard(props) {
             </li>
             <li>{props.owner}</li>
           </ul>
+          </div>
           </div>
       </div>
   );
