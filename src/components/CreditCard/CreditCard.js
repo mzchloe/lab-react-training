@@ -6,7 +6,9 @@ export default function CreditCard(props) {
         backgroundColor: props.bgColor,
         color: props.color 
     }
+
     let lastDigits = props.number.slice(props.number.length - 4);
+
 
   return (
       <div className="credit-card" style={divStyle}>
