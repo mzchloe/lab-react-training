@@ -10,11 +10,12 @@ export default function DriverCard(props) {
         </div>
         <div className="driver-content">
         <ul>
-            <li>{props.name}</li>
+            <li><h2>{props.name}</h2></li>
             <li>{props.rating} ☆</li>
             <li>{props.car.model} - {props.car.licensePlate}</li>
         </ul>
         </div>
         </div>
+        
     )
 }

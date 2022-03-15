@@ -1,24 +1,26 @@
 .driver-card {
-    background-color:darkslateblue;
-    border-radius: 10px;
+  background-color: darkslateblue;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 10px;
+  color: white;
+}
+
+.circular {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin: 10px;
-    color: white;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: left;
 }
 
 .circular--img {
-    width: 20%;
-    height: auto;
+    max-width: 150px;
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
 }
 
-.driver-content {
-    border: 1px solid white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
