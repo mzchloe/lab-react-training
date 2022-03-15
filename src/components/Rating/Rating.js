@@ -1,4 +1,4 @@
-import { IconName } from "react-icons/io";
+
 
 export default function Rating(props){
 
@@ -9,12 +9,13 @@ export default function Rating(props){
 
         return '★'.repeat(numberOfStars) + '☆'.repeat(5- numberOfStars);
     };  */
-   
+
+    
 
     return (
 
         <div>
-     {/*     <p>{displayRatings(props.children)}</p> */}
+         ★
         </div>
     )
 }

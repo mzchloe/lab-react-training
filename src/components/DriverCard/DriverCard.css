@@ -1,0 +1,24 @@
+.driver-card {
+    background-color:darkslateblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+}
+
+.circular--img {
+    width: 20%;
+    height: auto;
+}
+
+.driver-content {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
